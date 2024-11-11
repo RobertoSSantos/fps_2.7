@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <form action="/cgi-bin/calculadora.cgi" method="POST">
+        <label for="num1">Primeiro Número:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br><br>
+        
+        <label for="num2">Segundo Número:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br><br>
+        
+        <label for="operation">Escolha a Operação:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Adição</option>
+            <option value="subtract">Subtração</option>
+            <option value="multiply">Multiplicação</option>
+            <option value="divide">Divisão</option>
+        </select>
+        <br><br>
+        
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
